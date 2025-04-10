@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1CDCD"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="421dp"
+        android:layout_height="190dp"
+        android:background="@drawable/fhkiellogo"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="378dp"
+        android:layout_height="266dp"
+        android:background="#FDFAFA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#0FF6F5F5"
+            android:text="   Hier Können Sie Die Daten Der einzelnen           Räume abrufrn"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnR1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRaum1"
+            android:text="Raum1"
+            app:backgroundTint="#344EDD" />
+
+        <Button
+            android:id="@+id/btnR2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRaum2"
+            android:text="Raum2"
+            app:backgroundTint="#344EDD" />
+
+        <Button
+            android:id="@+id/btnR3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRaum3"
+            android:text="Raum3"
+            app:backgroundTint="#344EDD" />
+
+        <Button
+            android:id="@+id/btnR4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRaum4"
+            android:text="Raum4"
+            app:backgroundTint="#344EDD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="297dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FBFAFA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hier werden alle Räume geprüft"
+            android:textColor="#100F0F"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickFenster"
+            android:text="Wo ist das Fenster Auf"
+            app:backgroundTint="#344EDD" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLicht"
+            android:text="Wo ist das Licht an"
+            app:backgroundTint="#344EDD" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickBewegung"
+            android:text="Wo gab es gerade Bewegung"
+            app:backgroundTint="#344EDD" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
